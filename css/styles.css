@@ -26,16 +26,14 @@ a:active {
 }
 
 .main-page {
-    margin: 0 0 110px;
     background-image: url("../img/Rectangle.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 335px;
 }
 
-.flex-container-nav {
+.flex-navigation {
     margin: 0;
-    /*height: 100px;*/
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -44,12 +42,11 @@ a:active {
 }
 
 @media (min-width: 300px) and (max-width: 752px) {
-    .flex-container-nav {
+    .flex-navigation {
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-start;
         margin: 0;
-        /*height: 497px;*/
     }
 }
 
@@ -57,27 +54,28 @@ a:active {
     flex-direction: column;
 }
 
-.flex-item {
+.navigation-item {
     text-align: center;
-    font-size: 1em;
-    padding: 2.5em 1.25em 2.5em 1.25em;
+    font-size: 16px;
+    padding: 40px 20px;
 }
 
-.flex-item:nth-last-child(1) {
+.navigation-item:nth-last-child(1) {
     margin-right: 18%;
 }
 
 @media (min-width: 300px) and (max-width: 752px) {
-    .flex-item:nth-last-child(1) {
+    .navigation-item:nth-last-child(1) {
         margin-right: 0;
     }
 }
 
-.flex-item:hover {
+.navigation-item:hover {
     border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 38px;
 }
 
-.art {
+.main-page-article {
     margin-top: 220px;
     margin-bottom: 20px;
     color: #FFFFFF;
@@ -86,7 +84,7 @@ a:active {
     font-weight: 500;
 }
 
-.hed {
+.main-page-header {
     color: #FFFFFF;
     text-align: center;
     font-size: 48px;
@@ -103,7 +101,7 @@ a:active {
     text-align: center;
 }
 
-.t-button {
+.our-projects-button {
     border-radius: 30px;
     padding: 13px 36px 15px;
     font-size: 16px;
@@ -113,7 +111,12 @@ a:active {
     width: 200px;
 }
 
-.mob {
+.services-page{
+    padding-top: 110px;
+    margin: 0 auto 225px;
+}
+
+.services-header {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -121,7 +124,7 @@ a:active {
     margin-bottom: 50px;
 }
 
-.lor {
+.services-description {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -129,7 +132,7 @@ a:active {
     margin-bottom: 70px;
 }
 
-.flex-container {
+.flex-services {
     max-width: 1130px;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -138,7 +141,7 @@ a:active {
 }
 
 @media (min-width: 300px) and (max-width: 1066px) {
-    .flex-container {
+    .flex-services {
         justify-content: space-evenly;
     }
 }
@@ -150,14 +153,14 @@ a:active {
     margin-bottom: 55px;
 }
 
-.flex-txt {
+.block-header {
     max-width: 222px;
     font-weight: 600;
     font-size: 18px;
     margin-top: 46px;
 }
 
-.flex-description {
+.block-description {
     margin-top: 12px;
     max-width: 222px;
     font-size: 14px;
@@ -174,7 +177,7 @@ a:active {
     text-align: center;
 }
 
-.bg-grey {
+.bg-grey-1 {
     background-color: #F6F6F8;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -186,12 +189,12 @@ a:active {
     flex-wrap: wrap;
     max-width: 1110px;
     border-bottom: 1px solid #E0E0E0;
-    margin: 205px auto 0;
+    margin: 0 auto;
     padding-bottom: 70px;
 }
 
 
-.mos {
+.high-standards-header {
     max-width: 424px;
     padding-top: 152px;
     font-size: 36px;
@@ -200,7 +203,7 @@ a:active {
     margin-bottom: 40px;
 }
 
-.dis {
+.standards-description {
     max-width: 489px;
     font-size: 16px;
     font-weight: 400;
@@ -220,18 +223,13 @@ a:active {
         justify-content: space-evenly;
     }
 
-    .mos {
+    .high-standards-header {
         text-align: center;
         margin: 0 auto 40px;
     }
 
-    .dis {
+    .standards-description {
         text-align: center;
-    }
-
-    .link {
-        text-align: center;
-        margin: 0 auto;
     }
 }
 
@@ -264,12 +262,12 @@ a:active {
     height: 35px;
 }
 
-.im {
+.our-projects-image {
     float: left;
     padding-top: 7px;
 }
 
-.op {
+.projects {
     font-weight: 400;
     font-size: 16px;
     color: #999999;
@@ -287,7 +285,7 @@ a:active {
     margin-bottom: 85px;
 }
 
-.flex-container-but {
+.flex-container-button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -311,11 +309,11 @@ a:active {
         font-size: 26px;
     }
 
-    .mos {
+    .high-standards-header {
         font-size: 28px;
     }
 
-    .mob {
+    .services-header {
         font-size: 28px;
     }
 
@@ -323,12 +321,12 @@ a:active {
         font-size: 28px;
     }
 
-    .flex-container-but {
+    .flex-container-button {
         justify-content: space-evenly;
     }
 }
 
-.ser-button {
+.pr-button {
     width: 200px;
     padding: 13px 0 15px;
     margin: 0 auto;
@@ -347,7 +345,7 @@ a:active {
     text-align: center;
 }
 
-.v-button {
+.all-services-button {
     border-radius: 30px;
     padding: 13px 54px 15px;
     font-size: 16px;
@@ -357,7 +355,7 @@ a:active {
     width: 200px;
 }
 
-.m-button {
+.all-projects-button {
     border-radius: 30px;
     padding: 13px 46px 15px;
     font-size: 16px;
@@ -367,7 +365,7 @@ a:active {
     width: 200px;
 }
 
-.flex-container-photo {
+.flex-works {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -379,7 +377,7 @@ a:active {
 }
 
 @media (min-width: 300px) and (max-width: 760px) {
-    .flex-container-photo {
+    .flex-works {
         flex-direction: column;
         align-content: center;
     }
@@ -400,7 +398,7 @@ a:active {
     font-size: 16px;
 }
 
-.bg-grey2 {
+.bg-grey-2 {
     margin-top: 85px;
     background-size: 100% 100%;
     background-color: #F6F6F8;
@@ -423,7 +421,7 @@ a:active {
     margin-bottom: 345px;
 }
 
-.flex-prev {
+.flex-preview {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -513,7 +511,7 @@ a:active {
     padding-bottom: 30px;
 }
 
-.flex-foot {
+.flex-footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -524,7 +522,7 @@ a:active {
     border-bottom: 1px solid #E0E0E0;
 }
 
-.im2 {
+.footer-image {
     float: left;
     padding-top: 3px;
     margin-right: 15px;
@@ -536,7 +534,7 @@ a:active {
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
-    .flex-foot {
+    .flex-footer {
         display: flex;
         flex-direction: column;
         align-content: center;
